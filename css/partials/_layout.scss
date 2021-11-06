@@ -1,0 +1,35 @@
+// Container devices
+$container-xl: 1170px;
+$container-lg: 1024px;
+$container-md: 768px;
+$container-sm: 520px;
+
+// Mixins of media query
+@mixin responsive($device) {
+  @if $device == xl {
+    // For resolutions higher than 1170px
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == lg {
+    // For resolutions between 1024px and 1170px
+    @media screen and (max-width: $container-xl) and (min-width: $container-lg) {
+      @content;
+    }
+  } @else if $device == md {
+    // For resolutions between 768px and 1024px
+    @media screen and (max-width: $container-lg) and (min-width: $container-md) {
+      @content;
+    }
+  } @else if $device == sm {
+    // For resolutions lower than 768px
+    @media screen and (max-width: $container-md) {
+      @content;
+    }
+  } @else if $device == xs {
+    // For resolutions lower than 520px
+    @media screen and (max-width: $container-sm) {
+      @content;
+    }
+  }
+}
