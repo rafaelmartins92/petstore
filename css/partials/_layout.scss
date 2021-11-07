@@ -81,3 +81,12 @@ $container-sm: 520px;
     }
   }
 }
+
+.types {
+  max-width: $container-xl;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 auto;
+}
