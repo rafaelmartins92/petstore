@@ -10,6 +10,7 @@
 
 .categories {
   background-color: #f4a53b;
+  overflow: auto;
 }
 
 .categories__images {
@@ -23,6 +24,61 @@
   margin: 0 auto;
   padding: 16px 24px;
   gap: 16px;
+}
+
+.news {
+  max-width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__price .list-price {
+  margin-right: 8px;
+}
+
+.product__price .price {
+  font-weight: bold;
 }
 
 h1 {
@@ -87,10 +143,7 @@ h4 {
 
 h5 {
   text-transform: uppercase;
-  background: linear-gradient(220.94deg, #f4a53b 14.43%, #795dbf 85.28%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #343a40;
   font-weight: bold;
   font-family: "Sora", sans-serif;
   font-size: 18px;
@@ -106,7 +159,7 @@ h5 {
 }
 
 p {
-  color: #adb5bd;
+  color: #495057;
   font-family: "Sora", sans-serif;
 }
 
@@ -151,7 +204,6 @@ body {
 svg,
 img {
   display: block;
-  width: 100%;
 }
 
 a {

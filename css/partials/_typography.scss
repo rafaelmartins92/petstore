@@ -120,14 +120,7 @@ h4 {
 
 h5 {
   text-transform: uppercase;
-  background: linear-gradient(
-    220.94deg,
-    $secondary-default 14.43%,
-    $primary-default 85.28%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $black-100;
   font-weight: bold;
 
   @include typeface-1(h5, desktop);
@@ -138,7 +131,7 @@ h5 {
 }
 
 p {
-  color: $black-300;
+  color: $black-200;
 
   @include typeface-1(p2, desktop);
 

@@ -36,6 +36,7 @@ $container-sm: 520px;
 
 .categories {
   background-color: $secondary-default;
+  overflow: auto;
 
   &__images {
     max-width: $container-xl;
@@ -44,5 +45,39 @@ $container-sm: 520px;
     margin: 0 auto;
     padding: 16px 24px;
     gap: 16px;
+  }
+}
+
+.news {
+  max-width: $container-xl;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__price {
+    display: flex;
+
+    .list-price {
+      margin-right: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+    }
   }
 }
