@@ -10,6 +10,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @include responsive(sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .menu-hamburguer {
@@ -91,26 +97,31 @@
 
 // DESKTOP
 .navbar-desktop {
-  max-width: $container-xl;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 24px;
 
   @include responsive(md) {
+    display: none;
+  }
+
+  @include responsive(sm) {
     display: none;
   }
 }
 
 .nav-bar {
+  max-width: $container-xl;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   padding: 16px 0;
 }
 
 .search-bar {
+  max-width: $container-xl;
   display: flex;
   align-items: center;
   width: 190px;
@@ -133,13 +144,18 @@
   }
 }
 
+.menu-desktop-background {
+  background-color: $primary-default;
+}
+
 .menu-desktop {
+  max-width: $container-xl;
   @include typeface-2(p2, desktop);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $primary-default;
+  margin: 0 auto;
   padding: 6px 16px;
 
   a {

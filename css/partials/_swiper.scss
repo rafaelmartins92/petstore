@@ -1,0 +1,25 @@
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+
+  @include responsive(sm) {
+    height: 240px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include responsive(sm) {
+    display: none !important;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+
+  @include responsive(sm) {
+    display: block;
+  }
+}

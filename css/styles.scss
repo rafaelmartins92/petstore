@@ -4,10 +4,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --swiper-theme-color: #adb5bd;
 }
 
-@import "partials/layout";
 @import "partials/colors";
+@import "partials/layout";
 @import "partials/typography";
 
 html {
@@ -27,6 +28,7 @@ body {
 svg,
 img {
   display: block;
+  width: 100%;
 }
 
 a {
@@ -38,3 +40,4 @@ li {
 }
 
 @import "partials/menu";
+@import "partials/swiper";
