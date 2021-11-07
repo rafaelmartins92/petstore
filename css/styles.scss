@@ -27,7 +27,14 @@ body {
 svg,
 img {
   display: block;
-  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 @import "partials/menu";

@@ -18,5 +18,82 @@
     <script src="/js/svg-inject.min.js"></script>
   </head>
 
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <!-- NAV MOBILE -->
+      <nav class="navbar-mobile">
+        <div class="menu-hamburguer"><div class="burguer"></div></div>
+        <div class="logo">
+          <a href=""
+            ><img
+              src="/img/logo.png"
+              alt="Logo com uma patinha de cachoro dentro de um coração seguido pelo texto Pet Store"
+          /></a>
+        </div>
+        <div class="icons">
+          <a href=""
+            ><img
+              src="/svg/profile.svg"
+              alt="Icone de perfil do usúario"
+              onload="SVGInject(this)"
+          /></a>
+          <a href=""
+            ><img
+              src="/svg/buy.svg"
+              alt="Icone de carrinho de compras"
+              onload="SVGInject(this)"
+          /></a>
+        </div>
+      </nav>
+
+      <!-- NAV DESKTOP -->
+      <nav class="navbar-desktop">
+        <div class="nav-bar">
+          <div class="search-bar">
+            <input type="text" class="search" placeholder="Pesquisar..." />
+            <a href=""
+              ><img
+                src="/svg/search.svg"
+                alt="Icone de lupa"
+                onload="SVGInject(this)"
+            /></a>
+          </div>
+          <div class="logo">
+            <a href=""
+              ><img
+                src="/img/logo.png"
+                alt="Logo com uma patinha de cachoro dentro de um coração seguido pelo texto Pet Store"
+            /></a>
+          </div>
+          <div class="icons">
+            <a href=""
+              ><img
+                src="/svg/profile.svg"
+                alt="Icone de perfil do usúario"
+                onload="SVGInject(this)"
+            /></a>
+            <a href=""
+              ><img
+                src="/svg/buy.svg"
+                alt="Icone de carrinho de compras"
+                onload="SVGInject(this)"
+            /></a>
+          </div>
+        </div>
+        <ul class="menu-desktop">
+          <li><a href="" class="menu-item">Categoria lorem</a></li>
+          <li><a href="" class="menu-item">Categoria</a></li>
+          <li><a href="" class="menu-item">Categoria lorem ipsum</a></li>
+          <li><a href="" class="menu-item">Categoria lorem</a></li>
+          <li><a href="" class="menu-item">Categoria</a></li>
+          <li><a href="" class="menu-item">Categoria lorem ipsum</a></li>
+          <li><a href="" class="menu-item">Categoria ipsum</a></li>
+          <li>
+            <div class="menu-hamburguer"><div class="burguer"></div></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
