@@ -33,3 +33,16 @@ $container-sm: 520px;
     }
   }
 }
+
+.categories {
+  background-color: $secondary-default;
+
+  &__images {
+    max-width: $container-xl;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 24px;
+    gap: 16px;
+  }
+}
