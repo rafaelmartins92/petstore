@@ -137,5 +137,9 @@
     color: $white;
     font-size: 14px;
     font-weight: 300;
+
+    &:hover {
+      color: $secondary-default;
+    }
   }
 }

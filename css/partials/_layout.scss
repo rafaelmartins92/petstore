@@ -93,6 +93,16 @@ $container-sm: 520px;
     }
   }
 
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $primary-default;
+    color: $white;
+    padding: 8px 16px;
+    z-index: 2;
+  }
+
   &:hover {
     .button {
       display: block;
