@@ -143,3 +143,25 @@
     }
   }
 }
+
+.cart,
+.cart-mobile {
+  position: relative;
+}
+
+.cart-items {
+
+  &::after {
+    content: attr(data-after);;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $secondary-default;
+    color: $white;
+    text-align: center;
+    padding-top: 2px;
+  }
+}

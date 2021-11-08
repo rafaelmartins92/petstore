@@ -441,6 +441,7 @@ span {
   padding: 8px 16px;
   border: none;
   cursor: pointer;
+  z-index: 999;
 }
 
 .button:hover {
@@ -1013,6 +1014,25 @@ li {
 
 .menu-desktop a:hover {
   color: #f4a53b;
+}
+
+.cart,
+.cart-mobile {
+  position: relative;
+}
+
+.cart-items::after {
+  content: attr(data-after);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f4a53b;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2px;
 }
 
 footer {
