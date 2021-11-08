@@ -1035,6 +1035,10 @@ li {
   padding-top: 2px;
 }
 
+.logo img {
+  width: 100%;
+}
+
 footer {
   max-width: 1170px;
   margin: 0 auto;
