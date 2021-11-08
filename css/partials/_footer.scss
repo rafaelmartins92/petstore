@@ -8,6 +8,22 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 2px solid $black-200;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @include responsive(sm) {
+    flex-direction: column;
+    padding: 8px 40px;
+
+    > * {
+      width: 100%;
+      padding: 16px 0;
+    }
+  }
 }
 
 .title {
@@ -20,6 +36,14 @@ footer {
   p {
     font-size: 10px;
     font-weight: 300;
+  }
+
+  @include responsive(sm) {
+    order: 2;
+
+    img {
+      margin: 0 auto;
+    }
   }
 }
 

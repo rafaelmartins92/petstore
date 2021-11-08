@@ -126,7 +126,6 @@
 
 .menu-desktop {
   max-width: $container-xl;
-  @include typeface-2(p2, desktop);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -136,5 +135,7 @@
 
   a {
     color: $white;
+    font-size: 14px;
+    font-weight: 300;
   }
 }

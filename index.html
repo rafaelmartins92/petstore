@@ -26,6 +26,8 @@
   </head>
 
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- HEADER -->
     <header id="header">
       <!-- NAV MOBILE -->
@@ -143,13 +145,14 @@
     </section>
 
     <!-- NEW RELEASES SECTION -->
-    <section class="news">
+    <section class="news py-5">
       <h4>Novidades</h4>
       <div class="products">
         <div class="product">
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -161,6 +164,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -172,6 +176,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -183,6 +188,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -208,13 +214,14 @@
     </section>
 
     <!-- HIGHLIGHTS SECITON -->
-    <section class="highlights">
+    <section class="highlights py-5">
       <h4>Destaques</h4>
       <div class="products">
         <div class="product">
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -226,6 +233,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -237,6 +245,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -248,6 +257,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -259,6 +269,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -270,6 +281,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -281,6 +293,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -292,6 +305,7 @@
           <a href=""
             ><img src="/img/produto-1.png" alt="" class="product__img"
           /></a>
+          <button class="button hide">Comprar</button>
           <p class="product__name">Lorem ipsum</p>
           <div class="product__price">
             <p class="list-price">R$ 99,99</p>
@@ -305,12 +319,11 @@
     <!-- NEWSLETTER SECTION -->
     <section class="newsletter">
       <div class="container">
-        <div class="offers">
+        <div class="offers p-3">
           <div class="offer">
             <img
               src="/img/icon-logo.png"
               alt="Coração amarelo com uma patinha de cachorro dentro"
-              onload="SVGInject(this)"
             />
             <p><b>Entrega gratuita</b> a partir de R$ 99</p>
           </div>
@@ -318,7 +331,6 @@
             <img
               src="/img/icon-logo.png"
               alt="Coração amarelo com uma patinha de cachorro dentro"
-              onload="SVGInject(this)"
             />
             <p><b>Parcelamento</b> sem juros</p>
           </div>
@@ -326,26 +338,25 @@
             <img
               src="/img/icon-logo.png"
               alt="Coração amarelo com uma patinha de cachorro dentro"
-              onload="SVGInject(this)"
             />
             <p><b>Cadastre-se</b> e ganhe desconto</p>
           </div>
         </div>
-        <form action="" class="form">
+        <form action="" class="form py-6">
           <h4>Assine nossa newsletter</h4>
-          <p>
+          <p class="py-3">
             Cadastre-se para receber nossas novidades e descontos exclusivos!
           </p>
           <div class="fields">
             <div class="input-box">
-              <input type="text" placeholder="Nome" required />
+              <input type="text" class="name" placeholder="Nome" required />
               <label for="name">Nome</label>
             </div>
             <div class="input-box">
-              <input type="email" placeholder="E-mail" required />
+              <input type="email" class="email" placeholder="E-mail" required />
               <label for="email">E-mail</label>
             </div>
-            <button class="send">Enviar</button>
+            <button class="button">Enviar</button>
           </div>
         </form>
       </div>
@@ -353,14 +364,14 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer">
+      <div class="footer py-5 px-3">
         <div class="company-info">
           <a href=""
             ><img
               src="/img/logo.png"
               alt="Logo com uma patinha de cachoro dentro de um coração seguido pelo texto Pet Store"
           /></a>
-          <div class="social-links">
+          <div class="social-links py-3">
             <a href=""
               ><img
                 src="/svg/icon-facebook.svg"
@@ -418,8 +429,8 @@
           </li>
         </ul>
       </div>
-      <div class="copywrite">
-        <p>Tecnologia e Desenvolvimento:</p>
+      <div class="copywrite py-2">
+        <p class="mr-3">Tecnologia e Desenvolvimento:</p>
         <a href=""
           ><img src="/img/serie-logo.png" alt="Logo Seri.e Design"
         /></a>
@@ -427,6 +438,8 @@
     </footer>
 
     <!-- SCRIPTS -->
+    <script src="js/products.js"></script>
+
     <script>
       const swiper = new Swiper(".swiper", {
         loop: true,

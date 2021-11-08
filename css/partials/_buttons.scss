@@ -1,7 +1,12 @@
-.send {
+.button {
   background: $secondary-default;
   color: $white;
   text-transform: uppercase;
   padding: 8px 16px;
   border: none;
+  cursor: pointer;
+
+ &:hover {
+   opacity: 0.9;
+ }
 }
