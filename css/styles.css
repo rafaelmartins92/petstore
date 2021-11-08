@@ -85,6 +85,7 @@
 
 .product__price .list-price {
   margin-right: 8px;
+  text-decoration: line-through;
 }
 
 .product__price .price {
