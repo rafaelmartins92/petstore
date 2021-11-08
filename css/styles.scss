@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  --swiper-theme-color: #adb5bd;
+  --swiper-theme-color: #7f7f7f;
 }
 
 @import "partials/colors";
@@ -41,4 +41,5 @@ li {
 }
 
 @import "partials/menu";
+@import "partials/footer";
 @import "partials/swiper";

@@ -67,6 +67,10 @@ $container-sm: 520px;
   flex-wrap: wrap;
   gap: 16px;
   margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 }
 
 // HIGHLIGHTS SECITON
@@ -99,7 +103,7 @@ $container-sm: 520px;
     }
 
     .price {
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 }
@@ -108,10 +112,9 @@ $container-sm: 520px;
 .newsletter {
   background-color: $primary-default;
 
-  h5,
+  h4,
   p {
     color: $white;
-    text-transform: uppercase;
   }
 }
 
@@ -126,17 +129,18 @@ $container-sm: 520px;
 
 .offers {
   display: flex;
+  justify-content: space-evenly;
   gap: 16px;
   border-bottom: 2px solid $secondary-default;
   width: 100%;
-  justify-content: space-evenly;
+  text-transform: uppercase;
 }
 
 .offer {
   display: flex;
   align-items: center;
 
-  svg {
+  img {
     margin-right: 8px;
   }
 }

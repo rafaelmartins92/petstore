@@ -1,5 +1,5 @@
 @mixin typeface-1($size, $device: desktop) {
-  font-family: "Sora", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   // H1
   @if $size == h1 and $device == desktop {
@@ -39,16 +39,16 @@
 
   // H5
   @else if $size == h5 and $device == desktop {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 140%;
   } @else if $size == h5 and $device == mobile {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
   }
 }
 
 @mixin typeface-2($size: p2, $device: desktop) {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   // p1
   @if $size == p1 and $device == desktop {
@@ -61,19 +61,10 @@
 
   // p2
   @if $size == p2 and $device == desktop {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 140%;
   } @else if $size == p2 and $device == mobile {
-    font-size: 14px;
-    line-height: 150%;
-  }
-
-  // p3
-  @if $size == p3 and $device == desktop {
-    font-size: 14px;
-    line-height: 150%;
-  } @else if $size == p3 and $device == mobile {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 150%;
   }
 }
@@ -110,6 +101,7 @@ h3 {
 
 h4 {
   color: $black-100;
+  text-transform: uppercase;
 
   @include typeface-1(h4, desktop);
 
@@ -119,9 +111,9 @@ h4 {
 }
 
 h5 {
-  text-transform: uppercase;
   color: $black-100;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 600;
 
   @include typeface-1(h5, desktop);
 
@@ -131,30 +123,24 @@ h5 {
 }
 
 p {
-  color: $black-200;
-
-  @include typeface-1(p2, desktop);
-
-  @include responsive(sm) {
-    @include typeface-1(p2, mobile);
-  }
-}
-
-strong {
   color: $black-100;
 
-  @include typeface-1(p2, desktop);
+  @include typeface-2(p2, desktop);
 
   @include responsive(sm) {
-    @include typeface-1(p2, mobile);
+    @include typeface-2(p2, mobile);
   }
 }
 
-.bold {
-  font-weight: bold;
-  color: $black-200;
+a {
+  font-family: "Montserrat", sans-serif;
+  color: $black-100;
+  font-size: 12px;
 }
 
-.text-center {
-  text-align: center;
+input,
+label {
+  font-family: "Montserrat", sans-serif;
+  color: $black-100;
+  font-size: 12px;
 }

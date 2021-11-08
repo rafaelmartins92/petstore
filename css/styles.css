@@ -5,7 +5,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  --swiper-theme-color: #adb5bd;
+  --swiper-theme-color: #7f7f7f;
 }
 
 .categories {
@@ -54,6 +54,10 @@
       flex-wrap: wrap;
   gap: 16px;
   margin: 0 auto;
+}
+
+.types img {
+  width: 100%;
 }
 
 .highlights {
@@ -108,17 +112,16 @@
 }
 
 .product__price .price {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .newsletter {
   background-color: #795dbf;
 }
 
-.newsletter h5,
+.newsletter h4,
 .newsletter p {
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .container {
@@ -143,12 +146,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
-  border-bottom: 2px solid #f4a53b;
-  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 16px;
+  border-bottom: 2px solid #f4a53b;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .offer {
@@ -160,7 +164,7 @@
           align-items: center;
 }
 
-.offer svg {
+.offer img {
   margin-right: 8px;
 }
 
@@ -188,111 +192,109 @@
 }
 
 h1 {
-  color: #343a40;
-  font-family: "Sora", sans-serif;
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif;
   font-size: 64px;
   line-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-family: "Sora", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
 }
 
 h2 {
-  color: #343a40;
-  font-family: "Sora", sans-serif;
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif;
   font-size: 52px;
   line-height: 100%;
 }
 
 @media screen and (max-width: 768px) {
   h2 {
-    font-family: "Sora", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 36px;
     line-height: 120%;
   }
 }
 
 h3 {
-  color: #343a40;
-  font-family: "Sora", sans-serif;
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   line-height: 120%;
 }
 
 @media screen and (max-width: 768px) {
   h3 {
-    font-family: "Sora", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     line-height: 120%;
   }
 }
 
 h4 {
-  color: #343a40;
-  font-family: "Sora", sans-serif;
+  color: #7f7f7f;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 130%;
 }
 
 @media screen and (max-width: 768px) {
   h4 {
-    font-family: "Sora", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 130%;
   }
 }
 
 h5 {
+  color: #7f7f7f;
   text-transform: uppercase;
-  color: #343a40;
-  font-weight: bold;
-  font-family: "Sora", sans-serif;
-  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   line-height: 140%;
 }
 
 @media screen and (max-width: 768px) {
   h5 {
-    font-family: "Sora", sans-serif;
-    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
     line-height: 150%;
   }
 }
 
 p {
-  color: #495057;
-  font-family: "Sora", sans-serif;
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
 }
 
 @media screen and (max-width: 768px) {
   p {
-    font-family: "Sora", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 150%;
   }
 }
 
-strong {
-  color: #343a40;
-  font-family: "Sora", sans-serif;
+a {
+  font-family: "Montserrat", sans-serif;
+  color: #7f7f7f;
+  font-size: 12px;
 }
 
-@media screen and (max-width: 768px) {
-  strong {
-    font-family: "Sora", sans-serif;
-  }
-}
-
-.bold {
-  font-weight: bold;
-  color: #495057;
-}
-
-.text-center {
-  text-align: center;
+input,
+label {
+  font-family: "Montserrat", sans-serif;
+  color: #7f7f7f;
+  font-size: 12px;
 }
 
 .search-bar {
@@ -304,8 +306,7 @@ strong {
           align-items: center;
   width: 190px;
   height: 40px;
-  border: 1px solid #adb5bd;
-  border-radius: 8px;
+  border: 1px solid #cccccc;
   padding: 16px;
   position: relative;
 }
@@ -316,7 +317,6 @@ strong {
           flex: 1;
   border: none;
   outline: none;
-  color: #495057;
 }
 
 .search-bar a {
@@ -334,7 +334,6 @@ strong {
   outline: none;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
-  font-size: 14px;
   width: 100%;
 }
 
@@ -573,8 +572,8 @@ li {
 
 .menu-desktop {
   max-width: 1170px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   line-height: 140%;
   width: 100%;
   display: -webkit-box;
@@ -592,6 +591,76 @@ li {
 
 .menu-desktop a {
   color: #ffffff;
+}
+
+footer {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.title {
+  color: #795dbf;
+}
+
+.company-info {
+  text-align: center;
+}
+
+.company-info p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+
+.social-links svg {
+  background: #7f7f7f;
+  border-radius: 50%;
+  padding: 3px;
+  width: 32px;
+  height: 32px;
+}
+
+.social-links svg:hover {
+  background: #f4a53b;
+}
+
+.copywrite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copywrite p {
+  text-transform: uppercase;
+  font-size: 10px;
 }
 
 .swiper-slide img {
